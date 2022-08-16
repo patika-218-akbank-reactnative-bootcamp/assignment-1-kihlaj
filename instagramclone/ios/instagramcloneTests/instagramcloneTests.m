@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface instagramcloneTests : XCTestCase
+@interface InstagramCloneTests : XCTestCase
 
 @end
 
-@implementation instagramcloneTests
+@implementation InstagramCloneTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {
