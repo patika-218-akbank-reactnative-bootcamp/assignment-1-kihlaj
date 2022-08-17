@@ -1,19 +1,13 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Pressable} from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import styles from './Banner.style';
 
-const Banner = ({children}) => {
+const Banner = ({ children }) => {
   return (
     <View style={styles.container}>
-      <Pressable>
-        <Image
-          source={require('../../../../assets/Instagram_logo.png')}
-          style={styles.logo}
-        />
-      </Pressable>
-      <View style={styles.icons}>
+      <View style={styles.leftBanner}>
         <Pressable>
           <Icon
             style={styles.icon}
@@ -23,9 +17,17 @@ const Banner = ({children}) => {
           />
         </Pressable>
         <Pressable>
+          <Image
+            source={require('../../../../assets/Instagram_logo.png')}
+            style={styles.logo}
+          />
+        </Pressable>
+      </View>
+      <View style={styles.rightBanner}>
+        <Pressable>
           <Icon
             style={styles.icon}
-            name="cards-heart"
+            name="cards-heart-outline"
             size={25}
             color="black"
           />
@@ -34,12 +36,7 @@ const Banner = ({children}) => {
           <View style={styles.unreadBadge}>
             <Text style={styles.unreadText}>2</Text>
           </View>
-          <Icon
-            style={styles.icon}
-            name="message-outline"
-            size={25}
-            color="black"
-          />
+          <Icon style={styles.icon} name="send" size={25} color="black" />
         </Pressable>
       </View>
     </View>

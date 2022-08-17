@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -12,19 +12,22 @@ export default StyleSheet.create({
     height: 50,
     resizeMode: 'contain',
   },
-  icons: {
+  rightBanner: {
+    flexDirection: 'row',
+  },
+  leftBanner: {
     flexDirection: 'row',
   },
   icon: {
     width: 25,
     height: 25,
-    marginLeft: 8,
+    marginLeft: 18,
     resizeMode: 'contain',
   },
   unreadBadge: {
     backgroundColor: '#ff5456',
     position: 'absolute',
-    left: 20,
+    left: 27,
     bottom: 15,
     width: 20,
     height: 20,
@@ -32,5 +35,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 100,
+  },
+  unreadText: {
+    fontWeight: 'bold',
   },
 });

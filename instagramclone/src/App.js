@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+import { SafeAreaView, ScrollView, Text, View } from 'react-native';
 
 // JS exports/imports
 import HomeScreen from './pages/HomeScreen';
