@@ -2,33 +2,43 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
+    height: 65,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
-    marginHorizontal: 20,
+    marginHorizontal: 12,
   },
   logo: {
     width: 100,
     height: 50,
     resizeMode: 'contain',
   },
-  rightBanner: {
-    flexDirection: 'row',
-  },
   leftBanner: {
+    flex: 3,
     flexDirection: 'row',
   },
-  icon: {
+  leftIcon: {
     width: 25,
     height: 25,
-    marginLeft: 18,
+    top: 10,
+    marginRight: 12,
+    resizeMode: 'contain',
+  },
+  rightBanner: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  rightIcon: {
+    width: 25,
+    height: 25,
+    marginLeft: 15,
     resizeMode: 'contain',
   },
   unreadBadge: {
     backgroundColor: '#ff5456',
     position: 'absolute',
-    left: 27,
-    bottom: 15,
+    left: 33,
+    bottom: 14,
     width: 20,
     height: 20,
     borderRadius: 25,

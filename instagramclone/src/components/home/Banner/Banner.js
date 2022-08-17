@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 
 import styles from './Banner.style';
 
@@ -9,8 +10,8 @@ const Banner = ({ children }) => {
     <View style={styles.container}>
       <View style={styles.leftBanner}>
         <Pressable>
-          <Icon
-            style={styles.icon}
+          <MaterialIcon
+            style={styles.leftIcon}
             name="plus-box-multiple-outline"
             size={25}
             color="black"
@@ -25,8 +26,8 @@ const Banner = ({ children }) => {
       </View>
       <View style={styles.rightBanner}>
         <Pressable>
-          <Icon
-            style={styles.icon}
+          <MaterialIcon
+            style={styles.rightIcon}
             name="cards-heart-outline"
             size={25}
             color="black"
@@ -36,7 +37,12 @@ const Banner = ({ children }) => {
           <View style={styles.unreadBadge}>
             <Text style={styles.unreadText}>2</Text>
           </View>
-          <Icon style={styles.icon} name="send" size={25} color="black" />
+          <IoniconsIcon
+            style={styles.rightIcon}
+            name="paper-plane-outline"
+            size={25}
+            color="black"
+          />
         </Pressable>
       </View>
     </View>
