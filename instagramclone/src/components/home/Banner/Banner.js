@@ -9,14 +9,12 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-Icon.loadFont();
-
 const Banner = ({children}) => {
   return (
     <View style={styles.container}>
       <Pressable>
         <Image
-          source={require('../../../assets/Instagram_logo.png')}
+          source={require('../../../../assets/Instagram_logo.png')}
           style={styles.logo}
         />
       </Pressable>

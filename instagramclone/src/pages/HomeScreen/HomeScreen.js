@@ -1,9 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import Banner from '../components/home/Banner';
+import styles from './HomeScreen.style';
+import Banner from '../../components/home/Banner/Banner';
 
-function HomeScreen() {
+const HomeScreen = () => {
   return (
     <View>
       <Banner />
