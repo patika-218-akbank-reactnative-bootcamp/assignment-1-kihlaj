@@ -17,7 +17,7 @@ const Banner = ({children}) => {
     <View style={styles.container}>
       <Pressable>
         <Image
-          source={require('../../assests/Instagram_logo.png')}
+          source={require('../../../assets/Instagram_logo.png')}
           style={styles.logo}
         />
       </Pressable>

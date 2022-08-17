@@ -1,7 +1,7 @@
 import React from 'react';
-import { View } from 'react-native';
+import {View} from 'react-native';
 
-import Banner from '../components/Banner';
+import Banner from '../components/home/Banner';
 
 function HomeScreen() {
   return (
