@@ -1,15 +1,16 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+
+// JS exports/imports
+import HomeScreen from './screens/HomeScreen';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View>
-          <Text>xD</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
+      <View>
+        <HomeScreen />
+      </View>
+    </ScrollView>
   );
 };
 
