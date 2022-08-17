@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-
 Icon.loadFont();
 
 const Banner = ({children}) => {
@@ -22,9 +21,33 @@ const Banner = ({children}) => {
         />
       </Pressable>
       <View style={styles.icons}>
-        <Icon name="home" size={24} color="black" />
-        <Text>xD</Text>
-        <Text>xD</Text>
+        <Pressable>
+          <Icon
+            style={styles.icon}
+            name="plus-box-multiple-outline"
+            size={25}
+            color="black"
+          />
+        </Pressable>
+        <Pressable>
+          <Icon
+            style={styles.icon}
+            name="cards-heart"
+            size={25}
+            color="black"
+          />
+        </Pressable>
+        <Pressable>
+          <View style={styles.unreadBadge}>
+            <Text style={styles.unreadText}>2</Text>
+          </View>
+          <Icon
+            style={styles.icon}
+            name="message-outline"
+            size={25}
+            color="black"
+          />
+        </Pressable>
       </View>
     </View>
   );
@@ -37,13 +60,31 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginHorizontal: 20,
   },
-  icons: {
-    flexDirection: 'row',
-  },
   logo: {
     width: 100,
     height: 50,
     resizeMode: 'contain',
+  },
+  icons: {
+    flexDirection: 'row',
+  },
+  icon: {
+    width: 25,
+    height: 25,
+    marginLeft: 8,
+    resizeMode: 'contain',
+  },
+  unreadBadge: {
+    backgroundColor: '#ff5456',
+    position: 'absolute',
+    left: 20,
+    bottom: 15,
+    width: 20,
+    height: 20,
+    borderRadius: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 100,
   },
 });
 
