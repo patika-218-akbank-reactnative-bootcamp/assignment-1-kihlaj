@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, FlatList, ScrollView, Text } from 'react-native';
+import { View, Image, FlatList, Text } from 'react-native';
 
 import { USERS } from '../../../../data/users';
 import styles from './Story.style';
