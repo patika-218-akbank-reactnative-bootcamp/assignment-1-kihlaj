@@ -34,4 +34,9 @@ export const USERS = [
     user: 'Xena Waller',
     image: 'https://placekitten.com/g/305/300',
   },
+  {
+    id: 8,
+    user: 'Xenar Weaker',
+    image: 'https://placekitten.com/96/139',
+  },
 ];
