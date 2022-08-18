@@ -3,35 +3,14 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     width: '100%',
-    height: 150,
-  },
-  story: {
-    top: 2.5,
-    width: 70,
-    height: 70,
-    borderRadius: 50,
-    marginLeft: 12,
-    zIndex: 1,
-  },
-  storyLinearGradient: {
-    width: 75,
-    height: 75,
-    left: -2.3,
-    marginLeft: 12,
-    position: 'absolute',
-  },
-  storyText: {
-    position: 'absolute',
-    left: 15,
-    top: 75,
-    fontWeight: 'bold',
-    fontSize: 12,
+    height: 100,
+    backgroundColor: 'pink',
+    flex: 1,
   },
   profilePictureImage: {
     width: 70,
     height: 70,
     borderRadius: 50,
-    position: 'absolute',
     top: 2.5,
     marginLeft: 10,
   },
@@ -42,9 +21,6 @@ export default StyleSheet.create({
     top: 50,
     position: 'absolute',
   },
-  storyContainer: {
-    flex: 1,
-  },
   profileText: {
     position: 'absolute',
     left: 15,
@@ -52,8 +28,26 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 12,
   },
-  storyList: {
-    marginLeft: 82,
-    flex: 1,
+  storyLinearGradient: {
+    width: 75,
+    height: 75,
+    left: -2.3,
+    marginLeft: 14,
+    position: 'absolute',
+  },
+  story: {
+    top: 2.5,
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+    marginLeft: 14,
+    zIndex: 1,
+  },
+  storyText: {
+    position: 'absolute',
+    left: 22,
+    top: 75,
+    fontWeight: 'bold',
+    fontSize: 12,
   },
 });
