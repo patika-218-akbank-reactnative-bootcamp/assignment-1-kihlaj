@@ -25,7 +25,7 @@ export const POSTS = [
     imageUrl:
       'https://ichef.bbci.co.uk/news/976/cpsprodpb/15C0D/production/_117310198_03.jpg',
     user: USERS[2].user,
-    likes: 7870,
+    likes: 98,
     caption: 'Gotta go fast!',
     profile_picture: USERS[2].image,
     comments: [
@@ -44,7 +44,7 @@ export const POSTS = [
     imageUrl:
       'https://images-na.ssl-images-amazon.com/images/I/51eqas1hTKL._SX403_BO1,204,203,200_.jpg',
     user: USERS[6].user,
-    likes: 7870,
+    likes: 123,
     caption: 'Gotta go fast!!!!',
     profile_picture: USERS[6].image,
     comments: [

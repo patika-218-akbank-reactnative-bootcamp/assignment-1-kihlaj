@@ -26,7 +26,7 @@ export default StyleSheet.create({
     top: 75,
     fontWeight: '400',
     color: '#000',
-    fontSize: 12,
+    fontSize: 13,
   },
   storyList: {
     padding: 5,
@@ -52,6 +52,6 @@ export default StyleSheet.create({
     top: 75,
     fontWeight: '400',
     color: '#000',
-    fontSize: 12,
+    fontSize: 13,
   },
 });
