@@ -3,6 +3,6 @@
 I used AntDesign and Ionicons from react-native-vector-icons. Styling done with native css.
 
 Some pictures of the application:
-![image description](./InstagramClone/assets/pic1.png)
-![image description](./InstagramClone/assets/pic2.png)
-![image description](./InstagramClone/assets/pic3.png)
+![image description](./instagramclone/assets/pic1.png)
+![image description](./instagramclone/assets/pic2.png)
+![image description](./instagramclone/assets/pic3.png)
