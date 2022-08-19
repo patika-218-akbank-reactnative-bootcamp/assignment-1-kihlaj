@@ -5,6 +5,7 @@ import styles from './HomeScreen.style';
 import Banner from '../../components/home/Banner';
 import Story from '../../components/home/Story';
 import Post from '../../components/home/Post';
+import BottomNav from '../../components/home/BottomNav';
 
 const HomeScreen = () => {
   return (
@@ -12,6 +13,7 @@ const HomeScreen = () => {
       <Banner />
       <Story />
       <Post />
+      <BottomNav />
     </View>
   );
 };
