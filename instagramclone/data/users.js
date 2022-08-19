@@ -33,13 +33,13 @@ export const USERS = [
     id: 6,
     user: 'Xena Waller',
     nick_name: 'xenaaweak344',
-    image: 'https://placekitten.com/g/170/300',
+    image: 'https://placekitten.com/g/131/312',
   },
   {
     id: 7,
     user: 'Xena Waller',
     nick_name: 'xenawalle',
-    image: 'https://placekitten.com/g/174/300',
+    image: 'https://placekitten.com/g/274/267',
   },
   {
     id: 8,

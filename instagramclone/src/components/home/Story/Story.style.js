@@ -27,15 +27,18 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 12,
   },
+  storyList: {
+    padding: 5,
+  },
   storyLinearGradient: {
     width: 75,
     height: 75,
-    left: -2.3,
+    left: 2,
     marginLeft: 14,
     position: 'absolute',
   },
   story: {
-    top: 2.5,
+    bottom: 2,
     width: 70,
     height: 70,
     borderRadius: 50,
@@ -44,7 +47,7 @@ export default StyleSheet.create({
   },
   storyText: {
     position: 'absolute',
-    left: 22,
+    left: 25,
     top: 75,
     fontWeight: 'bold',
     fontSize: 12,

@@ -5,7 +5,7 @@ import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 
 import styles from './Banner.style';
 
-const Banner = ({ children }) => {
+const Banner = () => {
   return (
     <View style={styles.container}>
       <View style={styles.leftBanner}>

@@ -20,7 +20,7 @@ const Story = () => {
           <Text style={styles.profileText}>Your Story</Text>
         </View>
       ) : (
-        <View style={{ textAlign: 'center', alignItems: 'center' }}>
+        <View style={styles.storyList}>
           <Image
             source={require('../../../../assets/instagram-story-linear-gradient.png')}
             style={styles.storyLinearGradient}
