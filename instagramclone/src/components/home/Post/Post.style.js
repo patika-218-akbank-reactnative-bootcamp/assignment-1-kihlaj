@@ -18,6 +18,11 @@ export default StyleSheet.create({
     borderWidth: 1.6,
     borderColor: '#d62976',
   },
-  postHeaderText: { marginLeft: 5, fontWeight: '700' },
+  postHeaderText: {
+    marginLeft: 5,
+    fontWeight: '700',
+    color: '#000',
+  },
   postHeaderTop: { flexDirection: 'row', alignItems: 'center' },
+  postHeaderThreeDots: { width: 12, height: 12, resizeMode: 'contain' },
 });

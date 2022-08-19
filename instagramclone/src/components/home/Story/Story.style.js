@@ -24,7 +24,8 @@ export default StyleSheet.create({
     position: 'absolute',
     left: 15,
     top: 75,
-    fontWeight: 'bold',
+    fontWeight: '400',
+    color: '#000',
     fontSize: 12,
   },
   storyList: {
@@ -49,7 +50,8 @@ export default StyleSheet.create({
     position: 'absolute',
     left: 25,
     top: 75,
-    fontWeight: 'bold',
+    fontWeight: '400',
+    color: '#000',
     fontSize: 12,
   },
 });

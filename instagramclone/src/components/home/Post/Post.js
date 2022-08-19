@@ -27,6 +27,11 @@ const PostHeader = ({ post }) => (
       />
       <Text style={styles.postHeaderText}>{post.user}</Text>
     </View>
+
+    <Image
+      style={styles.postHeaderThreeDots}
+      source={require('../../../../assets/post-header-three-dots.png')}
+    />
   </View>
 );
 
