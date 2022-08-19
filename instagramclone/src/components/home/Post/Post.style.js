@@ -39,10 +39,15 @@ export default StyleSheet.create({
     width: '30%',
     justifyContent: 'space-between',
   },
-  postLikes: { fontWeight: '600', color: '#000' },
+  postLikes: { fontWeight: '700', color: '#000' },
   likesContainer: {
     flexDirection: 'row',
     marginTop: 4,
     marginLeft: 15,
+  },
+  captionContainer: {
+    marginLeft: 17,
+    marginTop: 5,
+    flexDirection: 'row',
   },
 });

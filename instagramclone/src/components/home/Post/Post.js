@@ -17,6 +17,7 @@ const Post = () => {
           <PostImage post={post} />
           <PostFooter />
           <Likes post={post} />
+          <Caption post={post} />
         </View>
       ))}
     </>
@@ -68,6 +69,22 @@ const Likes = ({ post }) => (
         : post.likes.toLocaleString('en')}{' '}
       likes
     </Text>
+  </View>
+);
+
+const Caption = ({ post }) => (
+  <View style={styles.captionContainer}>
+    <Text style={{ fontWeight: '700', color: 'black' }}>{post.user}</Text>
+    <Text style={{ fontWeight: '400', color: 'black' }}>
+      {`  `}
+      {post.caption}
+    </Text>
+  </View>
+);
+
+const CommentsSection = ({ post }) => (
+  <View>
+    <Text style={{ fontWeight: '700', color: 'black' }}>{post.user}</Text>
   </View>
 );
 

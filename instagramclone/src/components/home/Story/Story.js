@@ -11,7 +11,7 @@ const Story = () => {
         <View>
           <Image
             style={styles.profilePictureImage}
-            source={require('../../../../assets/138.jpg')}
+            source={{ uri: item.image }}
           />
           <Image
             style={styles.profilePlusIcon}
