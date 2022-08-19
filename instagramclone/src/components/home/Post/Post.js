@@ -9,8 +9,8 @@ import styles from './Post.style';
 
 const Post = () => {
   return (
-    <>
-      <Divider width={1} orientation="vertical" />
+    <View style={{top: 5}}>
+      <Divider width={1} orientation="vertical" style={{top: 0}} />
       {POSTS.map((post, index) => (
         <View key={index} style={styles.container}>
           <PostHeader post={post} />
@@ -18,9 +18,10 @@ const Post = () => {
           <PostFooter />
           <Likes post={post} />
           <Caption post={post} />
+          <CommentsSection post={post} />
         </View>
       ))}
-    </>
+    </View>
   );
 };
 
@@ -83,8 +84,13 @@ const Caption = ({ post }) => (
 );
 
 const CommentsSection = ({ post }) => (
-  <View>
-    <Text style={{ fontWeight: '700', color: 'black' }}>{post.user}</Text>
+  <View style={styles.commentContainer}>
+    {post.comments.length > 0 && (
+      <Text>
+        View{post.comments.length > 1 ? ' all' : ''} {post.comments.length}{' '}
+        {post.comments.length > 1 ? 'comments' : 'comment'}
+      </Text>
+    )}
   </View>
 );
 

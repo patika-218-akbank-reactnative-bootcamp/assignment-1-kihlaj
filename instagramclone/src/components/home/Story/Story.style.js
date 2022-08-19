@@ -23,7 +23,7 @@ export default StyleSheet.create({
   profileText: {
     position: 'absolute',
     left: 15,
-    top: 75,
+    top: 78,
     fontWeight: '400',
     color: '#000',
     fontSize: 13,
@@ -48,8 +48,8 @@ export default StyleSheet.create({
   },
   storyText: {
     position: 'absolute',
-    left: 25,
-    top: 75,
+    left: 28,
+    top: 78,
     fontWeight: '400',
     color: '#000',
     fontSize: 13,

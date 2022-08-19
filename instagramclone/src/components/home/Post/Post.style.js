@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     marginBottom: 30,
+    top: 10,
   },
   postHeader: {
     flexDirection: 'row',
@@ -46,8 +47,12 @@ export default StyleSheet.create({
     marginLeft: 15,
   },
   captionContainer: {
-    marginLeft: 17,
+    marginLeft: 15,
     marginTop: 5,
     flexDirection: 'row',
+  },
+  commentContainer: {
+    marginLeft: 15,
+    marginTop: 4
   },
 });
