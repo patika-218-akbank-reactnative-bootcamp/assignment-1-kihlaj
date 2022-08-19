@@ -9,8 +9,8 @@ import styles from './Post.style';
 
 const Post = () => {
   return (
-    <View style={{ top: 5 }}>
-      <Divider width={1} orientation="vertical" style={{ top: 0 }} />
+    <View style={styles.postWrapper}>
+      <Divider width={1} orientation="vertical" style={styles.postDivider} />
       {POSTS.map((post, index) => (
         <View key={index} style={styles.container}>
           <PostHeader post={post} />
@@ -53,7 +53,12 @@ const PostFooter = () => (
   <View style={styles.postFooter}>
     <View style={styles.postLeftFooter}>
       <IoniconsIcon name="heart-outline" size={30} color="black" />
-      <AntIcon style={{ top: 2 }} name="message1" size={27} color="black" />
+      <AntIcon
+        style={styles.postFooterIcon}
+        name="message1"
+        size={27}
+        color="black"
+      />
       <IoniconsIcon name="paper-plane-outline" size={30} color="black" />
     </View>
 
@@ -76,9 +81,9 @@ const Likes = ({ post }) => (
 
 const Caption = ({ post }) => (
   <View style={styles.captionContainer}>
-    <Text style={{ fontWeight: '700', color: 'black' }}>{post.user}</Text>
-    <Text style={{ fontWeight: '400', color: 'black' }}>
-      {`  `}
+    <Text style={styles.captionUserText}>{post.user}</Text>
+    <Text style={styles.captionText}>
+      {'  '}
       {post.caption}
     </Text>
   </View>
@@ -100,10 +105,7 @@ const Comments = ({ post }) => (
     {post.comments.map((comment, index) => (
       <View key={index} style={styles.commentsContainer}>
         <Text>
-          <Text style={{ fontWeight: '700', color: 'black' }}>
-            {comment.user}
-          </Text>
-          {` `}
+          <Text style={styles.commentsUserText}>{comment.user}</Text>{' '}
           {comment.comment}
         </Text>
       </View>

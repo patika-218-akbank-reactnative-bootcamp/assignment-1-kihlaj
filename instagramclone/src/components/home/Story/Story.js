@@ -7,7 +7,7 @@ import styles from './Story.style';
 const Story = () => {
   const renderItem = ({ item }) => (
     <>
-      {item.id == 1 ? (
+      {item.id === 1 ? (
         <View>
           <Image
             style={styles.profilePictureImage}

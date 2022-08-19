@@ -1,6 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  postWrapper: {
+    top: 5,
+  },
+  postDivider: {
+    top: 0,
+  },
   container: {
     marginBottom: 30,
     top: 10,
@@ -40,6 +46,7 @@ export default StyleSheet.create({
     width: '30%',
     justifyContent: 'space-between',
   },
+  postFooterIcon: { top: 2 },
   postLikes: { fontWeight: '700', color: '#000' },
   likesContainer: {
     flexDirection: 'row',
@@ -51,6 +58,8 @@ export default StyleSheet.create({
     marginTop: 5,
     flexDirection: 'row',
   },
+  captionUserText: { fontWeight: '700', color: 'black' },
+  captionText: { fontWeight: '400', color: 'black' },
   commentSectionContainer: {
     marginLeft: 15,
     marginTop: 4,
@@ -59,5 +68,9 @@ export default StyleSheet.create({
     marginLeft: 15,
     marginTop: 3,
     flexDirection: 'row',
+  },
+  commentUserText: {
+    fontWeight: '400',
+    color: 'black',
   },
 });
