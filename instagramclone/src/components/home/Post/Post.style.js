@@ -51,8 +51,13 @@ export default StyleSheet.create({
     marginTop: 5,
     flexDirection: 'row',
   },
-  commentContainer: {
+  commentSectionContainer: {
     marginLeft: 15,
-    marginTop: 4
+    marginTop: 4,
+  },
+  commentsContainer: {
+    marginLeft: 15,
+    marginTop: 3,
+    flexDirection: 'row',
   },
 });
