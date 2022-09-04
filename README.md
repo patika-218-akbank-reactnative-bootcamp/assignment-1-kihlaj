@@ -55,11 +55,11 @@ _For more examples, please refer to the [Documentation](https://reactnative.dev/
 
 ## Roadmap
 
--   [x] Front-end of chats page
+-   [x] UI of posts page
 -   [x] React navigation
--   [ ] Front-end of camera page
--   [ ] Front-end of status page
--   [ ] Front-end of calls page
+-   [ ] UI of post add comment
+-   [ ] UI of profile edit page
+-   [ ] UI of send profile page
 -   [ ] Back-end of chats
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
